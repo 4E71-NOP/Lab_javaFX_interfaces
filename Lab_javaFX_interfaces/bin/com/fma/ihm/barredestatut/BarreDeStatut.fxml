@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="BarreDeStatutId" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fma.ihm.barredestatut.BarreDeStatutController">
+	<children>
+      <GridPane hgap="8.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="NEVER" minWidth="144.0" />
+            <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+          <ColumnConstraints halignment="RIGHT" hgrow="NEVER" minWidth="360.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+      						<Label minWidth="360.0" text="Lab JavaFX Interfaces - Faust MDA (2018) Tous droits réservés" textAlignment="RIGHT" textFill="#147180" GridPane.columnIndex="2">
+      							<font>
+      								<Font name="System Bold" size="10.0" />
+      							</font>
+      						</Label>
+						<Label fx:id="BarreDeStatutMessage" maxWidth="1.7976931348623157E308" minWidth="512.0" text="messages" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" />
+						<Label minWidth="144.0" text="Message de console:" />
+         </children>
+      </GridPane>
+	</children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+   <padding>
+      <Insets left="16.0" right="16.0" />
+   </padding>
+</AnchorPane>

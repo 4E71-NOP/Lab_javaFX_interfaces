@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="PrincipalId" maxHeight="-Infinity"
+	maxWidth="-Infinity" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="com.fma.ihm.principal.PrincipalController">
+	<children>
+		<GridPane AnchorPane.bottomAnchor="0.0"
+			AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+			AnchorPane.topAnchor="0.0">
+			<columnConstraints>
+				<ColumnConstraints hgrow="ALWAYS" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints maxHeight="29.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="1.7976931348623157E308"
+					minHeight="128.0" vgrow="ALWAYS" />
+				<RowConstraints maxHeight="30.0" vgrow="SOMETIMES" />
+			</rowConstraints>
+			<children>
+
+				<AnchorPane maxWidth="1.7976931348623157E308"
+					style="-fx-background-color: #80808080; -fx-border-color: #FFFFFF80 #00000080 #00000080 #FFFFFF80; -fx-border-width: 2;"
+					GridPane.rowIndex="2">
+					<children>
+						<fx:include fx:id="BarreDeStatutId"
+							source="/com/fma/ihm/barredestatut/BarreDeStatut.fxml" />
+					</children>
+				</AnchorPane>
+				<TabPane tabClosingPolicy="UNAVAILABLE" tabMinWidth="80.0"
+					GridPane.rowIndex="1">
+					<tabs>
+						<Tab text="Boutons" onSelectionChanged="#PrincipalTabAction">
+							<content>
+								<AnchorPane>
+									<children>
+										<fx:include fx:id="OngletBoutonsTabId"
+											source="/com/fma/ihm/boutons/OngletBoutons.fxml"
+											AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+											AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+									</children>
+								</AnchorPane>
+							</content>
+						</Tab>
+						<Tab text="Formulaires"
+							onSelectionChanged="#PrincipalTabAction">
+							<content>
+								<AnchorPane>
+									<children>
+										<fx:include fx:id="OngletFormulairesTabId"
+											source="/com/fma/ihm/formulaires/OngletFormulaires.fxml"
+											AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+											AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+									</children>
+								</AnchorPane>
+							</content>
+						</Tab>
+						<Tab text="Controles" onSelectionChanged="#PrincipalTabAction">
+							<content>
+								<AnchorPane>
+									<children>
+										<fx:include fx:id="OngletControlesTabId"
+											source="/com/fma/ihm/controles/OngletControles.fxml"
+											AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+											AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+									</children>
+								</AnchorPane>
+							</content>
+						</Tab>
+						<Tab text="Tables" onSelectionChanged="#PrincipalTabAction">
+							<content>
+								<AnchorPane>
+									<children>
+										<fx:include fx:id="OngletTablesTabId"
+											source="/com/fma/ihm/tables/OngletTables.fxml"
+											AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+											AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+									</children>
+								</AnchorPane>
+							</content>
+						</Tab>
+						<Tab text="Listes" onSelectionChanged="#PrincipalTabAction">
+							<content>
+								<AnchorPane>
+									<children>
+										<fx:include fx:id="OngletListesTabId"
+											source="/com/fma/ihm/listes/OngletListes.fxml"
+											AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+											AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+									</children>
+								</AnchorPane>
+							</content>
+						</Tab>
+						<Tab text="TreeView" onSelectionChanged="#PrincipalTabAction">
+							<content>
+								<AnchorPane>
+									<children>
+										<fx:include fx:id="OngletTreeViewsTabId"
+											source="/com/fma/ihm/treeviews/OngletTreeViews.fxml"
+											AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+											AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+									</children>
+								</AnchorPane>
+							</content>
+						</Tab>
+						<Tab text="Image" onSelectionChanged="#PrincipalTabAction">
+							<content>
+								<AnchorPane>
+									<children>
+										<fx:include fx:id="OngletImageTabId"
+											source="/com/fma/ihm/images/OngletImages.fxml"
+											AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+											AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+									</children>
+								</AnchorPane>
+							</content>
+						</Tab>
+						<Tab text="Editeur HTML"
+							onSelectionChanged="#PrincipalTabAction">
+							<content>
+								<AnchorPane>
+									<children>
+										<fx:include fx:id="OngletEditeurHTMLTabId"
+											source="/com/fma/ihm/editeurhtml/OngletEditeurHTML.fxml"
+											AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+											AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+									</children>
+								</AnchorPane>
+							</content>
+						</Tab>
+						<Tab text="Webview" onSelectionChanged="#PrincipalTabAction">
+							<content>
+								<AnchorPane>
+									<children>
+										<fx:include fx:id="OngletWebViewsTabId"
+											source="/com/fma/ihm/webviews/OngletWebViews.fxml"
+											AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+											AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+									</children>
+								</AnchorPane>
+							</content>
+						</Tab>
+						<Tab text="Contenus" onSelectionChanged="#PrincipalTabAction">
+							<content>
+								<AnchorPane>
+									<children>
+										<fx:include fx:id="OngletContenusTabId"
+											source="/com/fma/ihm/contenus/OngletContenus.fxml"
+											AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+											AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+									</children>
+								</AnchorPane>
+							</content>
+						</Tab>
+						<Tab text="Menu" onSelectionChanged="#PrincipalTabAction">
+							<content>
+								<AnchorPane>
+									<children>
+										<fx:include fx:id="OngletMenuTabId"
+											source="/com/fma/ihm/menus/OngletMenus.fxml"
+											AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+											AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+									</children>
+								</AnchorPane>
+							</content>
+						</Tab>
+						<Tab text="Graphiques"
+							onSelectionChanged="#PrincipalTabAction">
+							<content>
+								<AnchorPane>
+									<children>
+										<fx:include fx:id="OngletGraphiquesTabId"
+											source="/com/fma/ihm/graphiques/OngletGraphiques.fxml"
+											AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+											AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+									</children>
+								</AnchorPane>
+							</content>
+						</Tab>
+
+						<Tab text="Media" onSelectionChanged="#PrincipalTabAction">
+							<content>
+								<AnchorPane>
+									<children>
+										<fx:include fx:id="OngletMediaTabId"
+											source="/com/fma/ihm/media/OngletMedia.fxml"
+											AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+											AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+									</children>
+								</AnchorPane>
+							</content>
+						</Tab>
+						<!-- <Tab text="VLC-test" onSelectionChanged="#PrincipalTabAction"> -->
+						<!-- <content> -->
+						<!-- <AnchorPane> -->
+						<!-- <children> -->
+						<!-- <fx:include fx:id="OngletVLCTabId" source="/com/fma/ihm/vlc/OngletVlc.fxml" 
+							AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" 
+							AnchorPane.topAnchor="0.0"/> -->
+						<!-- </children> -->
+						<!-- </AnchorPane> -->
+						<!-- </content> -->
+						<!-- </Tab> -->
+
+					</tabs>
+				</TabPane>
+				<MenuBar maxWidth="1.7976931348623157E308">
+					<menus>
+						<Menu mnemonicParsing="false" text="File">
+							<items>
+								<MenuItem mnemonicParsing="false" text="Close" />
+							</items>
+						</Menu>
+						<Menu mnemonicParsing="false" text="Edit">
+							<items>
+								<MenuItem mnemonicParsing="false" text="Delete" />
+							</items>
+						</Menu>
+						<Menu mnemonicParsing="false" text="Help">
+							<items>
+								<MenuItem mnemonicParsing="false" text="About" />
+							</items>
+						</Menu>
+					</menus>
+				</MenuBar>
+			</children>
+		</GridPane>
+	</children>
+
+</AnchorPane>

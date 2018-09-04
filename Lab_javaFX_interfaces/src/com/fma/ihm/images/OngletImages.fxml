@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fma.ihm.images.OngletImagesController">
+	<children>
+		<GridPane hgap="16.0" vgap="16.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<columnConstraints>
+				<ColumnConstraints hgrow="NEVER" />
+				<ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="512.0" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints maxHeight="1.7976931348623157E308" vgrow="ALWAYS" />
+			</rowConstraints>
+			<children>
+						<GridPane>
+							<columnConstraints>
+								<ColumnConstraints halignment="RIGHT" minWidth="128.0" />
+								<ColumnConstraints halignment="CENTER" minWidth="128.0" />
+								<ColumnConstraints halignment="CENTER" minWidth="128.0" />
+							</columnConstraints>
+							<rowConstraints>
+                  <RowConstraints minHeight="24.0" vgrow="NEVER" />
+								<RowConstraints minHeight="24.0" vgrow="NEVER" />
+								<RowConstraints minHeight="24.0" vgrow="NEVER" />
+								<RowConstraints minHeight="24.0" vgrow="NEVER" />
+								<RowConstraints minHeight="24.0" vgrow="NEVER" />
+                  <RowConstraints minHeight="24.0" vgrow="NEVER" />
+								<RowConstraints minHeight="24.0" vgrow="NEVER" />
+								<RowConstraints minHeight="24.0" vgrow="NEVER" />
+								<RowConstraints minHeight="24.0" vgrow="NEVER" />
+								<RowConstraints minHeight="24.0" vgrow="NEVER" />
+                  <RowConstraints minHeight="24.0" vgrow="NEVER" />
+								<RowConstraints minHeight="24.0" vgrow="NEVER" />
+								<RowConstraints minHeight="24.0" vgrow="NEVER" />
+								<RowConstraints minHeight="24.0" vgrow="NEVER" />
+                  <RowConstraints minHeight="24.0" vgrow="NEVER" />
+                  <RowConstraints minHeight="24.0" vgrow="NEVER" />
+                  <RowConstraints minHeight="24.0" vgrow="NEVER" />
+                  <RowConstraints minHeight="24.0" vgrow="NEVER" />
+                  <RowConstraints minHeight="24.0" vgrow="NEVER" />
+                  <RowConstraints minHeight="24.0" vgrow="NEVER" />
+                  <RowConstraints minHeight="24.0" vgrow="NEVER" />
+                  <RowConstraints minHeight="24.0" vgrow="NEVER" />
+                  <RowConstraints minHeight="24.0" vgrow="ALWAYS" />
+							</rowConstraints>
+							<children>
+								<Label text="Opacité" GridPane.rowIndex="1" />
+								<Label fx:id="ImagesLabelOpacite" text="100%" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+								<Label text="Rotation" GridPane.rowIndex="3" />
+								<Slider fx:id="ImagesSliderRotation" blockIncrement="5.0" max="360.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+								<Slider fx:id="ImagesSliderOpacite" layoutX="63.0" layoutY="47.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" value="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+								<Label fx:id="ImagesLabelRotation" layoutX="95.0" layoutY="18.0" text="0°" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+								<Label text="Zoom" GridPane.rowIndex="2" />
+								<Label fx:id="ImagesLabelZoom" text="100%" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+								<Slider fx:id="ImagesSliderZoom" blockIncrement="1.0" majorTickUnit="100.0" max="400.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minorTickCount="5" snapToTicks="true" value="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+								<Label layoutX="19.0" layoutY="63.0" text="Rouge" GridPane.rowIndex="6" />
+								<Label layoutX="19.0" layoutY="90.0" text="Vert" GridPane.rowIndex="7" />
+								<Label layoutX="19.0" layoutY="120.0" text="Bleu" GridPane.rowIndex="8" />
+								<Slider fx:id="ImagesSliderRouge" blockIncrement="5.0" layoutX="138.0" layoutY="58.0" majorTickUnit="64.0" max="255.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minorTickCount="4" value="255.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+								<Slider fx:id="ImagesSliderVert" blockIncrement="5.0" layoutX="138.0" layoutY="82.0" majorTickUnit="64.0" max="255.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minorTickCount="4" value="255.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+								<Slider fx:id="ImagesSliderBleu" blockIncrement="5.0" layoutX="138.0" layoutY="112.0" majorTickUnit="64.0" max="255.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minorTickCount="4" value="255.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+								<Label fx:id="ImagesLabelRouge" layoutX="99.0" layoutY="63.0" text="255" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+								<Label fx:id="ImagesLabelVert" layoutX="94.0" layoutY="90.0" text="255" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+								<Label fx:id="ImagesLabelBleu" layoutX="94.0" layoutY="120.0" text="255" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+								<Label layoutX="45.0" layoutY="165.0" text="Luminosité" GridPane.rowIndex="12" />
+								<Label layoutX="45.0" layoutY="222.0" text="Contraste" GridPane.rowIndex="13" />
+								<Label layoutX="23.0" layoutY="15.0" text="Saturation" GridPane.rowIndex="11" />
+								<Slider fx:id="ImagesSliderLuminosite" blockIncrement="0.1" layoutX="146.0" layoutY="160.0" majorTickUnit="0.01" max="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" min="-1.0" minorTickCount="4" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+								<Slider fx:id="ImagesSliderContraste" blockIncrement="0.1" layoutX="146.0" layoutY="214.0" majorTickUnit="0.01" max="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" min="-1.0" minorTickCount="0" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+								<Slider fx:id="ImagesSliderSaturation" blockIncrement="0.1" layoutX="146.0" layoutY="244.0" majorTickUnit="0.01" max="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" min="-1.0" minorTickCount="0" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+                  <Label fx:id="ImagesLabelLuminosite" layoutX="102.0" layoutY="165.0" text="+0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                  <Label fx:id="ImagesLabelContraste" layoutX="102.0" layoutY="222.0" text="+0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                  <Label fx:id="ImagesLabelSaturation" layoutX="102.0" layoutY="252.0" text="+0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                  <Slider fx:id="ImagesSliderHUE" blockIncrement="0.1" layoutX="146.0" layoutY="244.0" majorTickUnit="0.01" max="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" min="-1.0" minorTickCount="0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                  <Label fx:id="ImagesLabelHUE" layoutX="104.0" layoutY="249.0" text="+0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <Label layoutX="14.0" layoutY="249.0" text="HUE" GridPane.rowIndex="10" />
+                  <Label text="Filtrage couleurs" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="111.0" text="Effet visuel" GridPane.rowIndex="15">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="74.0" layoutY="381.0" text="Glow" GridPane.rowIndex="17" />
+                  <Label layoutX="74.0" layoutY="453.0" text="Gaussian blur" GridPane.rowIndex="20" />
+                  <Slider fx:id="ImagesSliderGlow" blockIncrement="0.05" layoutX="266.0" layoutY="298.0" majorTickUnit="0.01" max="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minorTickCount="0" GridPane.columnIndex="2" GridPane.rowIndex="17" />
+                  <Slider fx:id="ImagesSliderGblur1" blockIncrement="0.25" majorTickUnit="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minorTickCount="5" GridPane.columnIndex="2" GridPane.rowIndex="20" />
+                  <Label fx:id="ImagesLabelGlow" layoutX="192.0" layoutY="275.0" text="0.0000" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+                  <Label fx:id="ImagesLabelGblur1" text="0.0000" GridPane.columnIndex="1" GridPane.rowIndex="20" />
+                  <VBox spacing="4.0" GridPane.columnIndex="2" GridPane.rowIndex="18">
+                     <children>
+                        <Slider fx:id="ImagesSliderBlur1" blockIncrement="1.0" majorTickUnit="0.01" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minorTickCount="0" />
+                        <Slider fx:id="ImagesSliderBlur2" blockIncrement="1.0" layoutX="10.0" layoutY="10.0" majorTickUnit="0.01" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minorTickCount="0" />
+                        <Slider fx:id="ImagesSliderBlur3" blockIncrement="1.0" layoutX="10.0" layoutY="30.0" majorTickUnit="1.0" max="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minorTickCount="0" snapToTicks="true" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="8.0" top="8.0" />
+                     </GridPane.margin>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" spacing="4.0" GridPane.columnIndex="1" GridPane.rowIndex="18">
+                     <children>
+                        <Label fx:id="ImagesLabelBlur1" text="0.0000" />
+                        <Label fx:id="ImagesLabelBlur2" layoutX="64.0" layoutY="14.0" text="0.0000" />
+                        <Label fx:id="ImagesLabelBlur3" layoutX="64.0" layoutY="33.0" text="0.0000" />
+                     </children>
+                     <padding>
+                        <Insets bottom="4.0" top="4.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets bottom="8.0" top="8.0" />
+                     </GridPane.margin>
+                  </VBox>
+                  <VBox alignment="TOP_RIGHT" spacing="4.0" GridPane.rowIndex="18">
+                     <children>
+                        <Label text="BoxBlur width" />
+                        <Label layoutX="10.0" layoutY="10.0" text="BoxBlur Height" />
+                        <Label layoutX="10.0" layoutY="29.0" text="BoxBlur Iterations" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <GridPane.margin>
+                        <Insets bottom="8.0" top="8.0" />
+                     </GridPane.margin>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" spacing="4.0" GridPane.columnIndex="1" GridPane.rowIndex="19">
+                     <GridPane.margin>
+                        <Insets bottom="8.0" top="8.0" />
+                     </GridPane.margin>
+                     <children>
+                        <Label fx:id="ImagesLabelMblur1" text="0.0000" />
+                        <Label fx:id="ImagesLabelMblur2" layoutX="10.0" layoutY="10.0" text="0.0000" />
+                     </children>
+                     <padding>
+                        <Insets bottom="4.0" top="4.0" />
+                     </padding>
+                  </VBox>
+                  <VBox spacing="4.0" GridPane.columnIndex="2" GridPane.rowIndex="19">
+                     <children>
+                        <Slider fx:id="ImagesSliderMblur1" blockIncrement="1.0" majorTickUnit="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minorTickCount="0" />
+                        <Slider fx:id="ImagesSliderMblur2" blockIncrement="0.5" layoutX="10.0" layoutY="10.0" majorTickUnit="45.0" max="359.99" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minorTickCount="6" />
+                     </children>
+                     <padding>
+                        <Insets bottom="4.0" top="4.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets bottom="8.0" top="8.0" />
+                     </GridPane.margin>
+                  </VBox>
+                  <VBox alignment="TOP_RIGHT" spacing="4.0" GridPane.rowIndex="19">
+                     <children>
+                        <Label text="Motion blur radius" />
+                        <Label layoutX="10.0" layoutY="10.0" text="Motion blur angle" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="8.0" top="8.0" />
+                     </GridPane.margin>
+                  </VBox>
+                  <VBox spacing="4.0" GridPane.columnIndex="2" GridPane.rowIndex="16">
+                     <children>
+                        <Slider fx:id="ImagesSliderBloom1" blockIncrement="0.05" majorTickUnit="0.01" max="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minorTickCount="0" />
+                        <Slider fx:id="ImagesSliderBloom2" blockIncrement="0.05" layoutX="10.0" layoutY="10.0" majorTickUnit="0.01" max="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minorTickCount="0" value="1.0" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="8.0" top="8.0" />
+                     </GridPane.margin>
+                  </VBox>
+                  <VBox alignment="TOP_RIGHT" spacing="4.0" GridPane.rowIndex="16">
+                     <children>
+                        <Label text="Bloom Threshold" />
+                        <Label layoutX="10.0" layoutY="10.0" text="Bloom property" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="8.0" top="8.0" />
+                     </GridPane.margin>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" spacing="4.0" GridPane.columnIndex="1" GridPane.rowIndex="16">
+                     <children>
+                        <Label fx:id="ImagesLabelBloom1" text="0.0000" />
+                        <Label fx:id="ImagesLabelBloom2" layoutX="10.0" layoutY="10.0" text="0.0000" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="8.0" top="8.0" />
+                     </GridPane.margin>
+                  </VBox>
+						<Button fx:id="ImagesBtnCharger" contentDisplay="CENTER" minWidth="256.0" mnemonicParsing="false" onAction="#ImagesBtnChargerAction" text="Charger une image" textAlignment="CENTER" GridPane.columnSpan="3" GridPane.halignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Button>
+      						<Button fx:id="ImagesBtnAjuster" minWidth="256.0" mnemonicParsing="false" onAction="#ImagesBtnAjusterAction" text="Ajuster / Remise à zéro" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="21" />
+      						<Label fx:id="ImagesInfos" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="64.0" minWidth="360.0" text="Information" GridPane.columnSpan="3" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="22" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS" />
+							</children>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+						</GridPane>
+				<ScrollPane fx:id="ImagesEncadrement" fitToHeight="true" fitToWidth="true" hvalue="0.5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" pannable="true" vvalue="0.5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+					<content>
+						<ImageView fx:id="ImagesContenu" fitHeight="512.0" fitWidth="512.0" pickOnBounds="true" preserveRatio="true" />
+					</content>
+					<opaqueInsets>
+						<Insets />
+					</opaqueInsets>
+				</ScrollPane>
+			</children>
+			<padding>
+				<Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+			</padding>
+		</GridPane>
+	</children>
+</AnchorPane>

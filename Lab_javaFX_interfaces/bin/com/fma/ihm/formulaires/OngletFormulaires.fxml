@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fma.ihm.formulaires.OngletFormulairesController">
+   <children>
+      <GridPane hgap="16.0" vgap="16.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="NEVER" minWidth="32.0" />
+          <ColumnConstraints hgrow="NEVER" minWidth="32.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="128.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="16.0" vgrow="NEVER" />
+            <RowConstraints minHeight="16.0" vgrow="NEVER" />
+            <RowConstraints minHeight="16.0" vgrow="NEVER" />
+          <RowConstraints minHeight="16.0" vgrow="NEVER" />
+            <RowConstraints minHeight="16.0" vgrow="NEVER" />
+          <RowConstraints minHeight="16.0" vgrow="NEVER" />
+            <RowConstraints minHeight="16.0" vgrow="NEVER" />
+            <RowConstraints minHeight="16.0" vgrow="NEVER" />
+            <RowConstraints minHeight="16.0" vgrow="NEVER" />
+            <RowConstraints minHeight="16.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="16.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="16.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="FormulaireChampTexte" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextField>
+            <CheckBox fx:id="FormulaireCheckbox01" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#FormulaireCheckbox01Action" text="CheckBox01" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Champ d'insertion" />
+            <Label text="Checkbox" GridPane.rowIndex="3" />
+            <Label fx:id="FormulaireChampTexteValeur" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #00000010;" text="Label" GridPane.columnIndex="2" />
+            <Label fx:id="FormulaireCheckbox01Valeur" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #00000010;" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label text="Menu de sélection" GridPane.rowIndex="5" />
+            <ChoiceBox fx:id="FormulaireMenuSelection" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <ToggleButton fx:id="FormulaireBoutonPosition" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#FormulaireBoutonPositionAction" text="ToggleButton" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <PasswordField fx:id="FormulaireChampMDP" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label layoutX="20.0" layoutY="108.0" text="Champ mot de passe" GridPane.rowIndex="1" />
+            <Label layoutX="20.0" layoutY="148.0" text="Interupteur" GridPane.rowIndex="6" />
+            <DatePicker fx:id="FormulaireSelecteurDate" maxWidth="1.7976931348623157E308" onAction="#FormulaireSelecteurDateAction" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label layoutX="20.0" layoutY="188.0" text="Sélecteur de date" GridPane.rowIndex="7" />
+            <Label fx:id="FormulaireMenuSelectionValeur" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #00000010;" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label fx:id="FormulaireChampMDPValeur" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #00000010;" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label fx:id="FormulaireBoutonPositionValeur" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #00000010;" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label fx:id="FormulaireSelecteurDateValeur" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #00000010;" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label fx:id="FormulaireSelecteurCouleurValeur" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #00000010;" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <ColorPicker fx:id="FormulaireSelecteurCouleur" maxWidth="1.7976931348623157E308" onAction="#FormulaireSelecteurCouleurAction" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label layoutX="20.0" layoutY="228.0" text="Sélecteur de couleur" GridPane.rowIndex="8" />
+            <TextArea fx:id="FormulaireChampTextArea" prefHeight="128.0" prefWidth="256.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextArea>
+            <Label layoutX="20.0" layoutY="228.0" text="Champ de type textarea" GridPane.rowIndex="9" />
+            <Label fx:id="FormulaireChampTextAreaValeur" alignment="TOP_LEFT" layoutX="733.0" layoutY="228.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #00000010;" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="9" GridPane.valignment="TOP" />
+            <Label layoutX="20.0" layoutY="60.0" text="Champ contraint par RegEx" GridPane.rowIndex="2" />
+            <Label fx:id="FormulaireChampRegExValeur" alignment="TOP_LEFT" layoutX="477.0" layoutY="60.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #00000010;" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <CheckBox fx:id="FormulaireCheckbox02" layoutX="211.0" layoutY="130.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#FormulaireCheckbox02Action" text="CheckBox02" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="FormulaireCheckbox02Valeur" alignment="TOP_LEFT" layoutX="477.0" layoutY="132.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #00000010;" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <TextField fx:id="FormulaireChampRegEx" layoutX="211.0" layoutY="20.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label layoutX="26.0" layoutY="438.0" text="Bouton radio" GridPane.rowIndex="10" />
+            <Label fx:id="FormulaireBoutonRadioValeur" alignment="TOP_LEFT" layoutX="495.0" layoutY="340.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #00000010;" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+            <VBox GridPane.columnIndex="1" GridPane.rowIndex="10">
+               <children>
+                  <RadioButton fx:id="FormulaireBoutonRadio01" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#FormulaireBoutonRadio" selected="true" text="RadioButton #1">
+                     <padding>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </padding>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="BoutonRadioGroup" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="FormulaireBoutonRadio02" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#FormulaireBoutonRadio" text="RadioButton #2" toggleGroup="$BoutonRadioGroup">
+                     <padding>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </padding>
+                  </RadioButton>
+                  <RadioButton fx:id="FormulaireBoutonRadio03" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#FormulaireBoutonRadio" text="RadioButton #3" toggleGroup="$BoutonRadioGroup">
+                     <padding>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </padding>
+                  </RadioButton>
+               </children>
+            </VBox>
+            <ComboBox fx:id="FormulaireComboBox" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            <Label text="ComboBox" GridPane.rowIndex="11" />
+            <Label fx:id="FormulaireComboBoxValeur" alignment="TOP_LEFT" layoutX="495.0" layoutY="525.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #00000010;" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+         </children>
+         <padding>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+         </padding>
+      </GridPane>
+   </children>
+</AnchorPane>
