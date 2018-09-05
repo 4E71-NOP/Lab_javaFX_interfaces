@@ -6,13 +6,20 @@ import javafx.scene.control.TextField;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
+/**
+ * Classe dédiée à l'onglet WebView<br>
+ * <br>
+ * 
+ * @author Faust MARIA DE ARAVALO - Tous droits réservés. Projet protfolio sur
+ *         JavaFX2<br>
+ *         <br>
+ */
 public class OngletWebViewsController {
-	@FXML
-	private Button WebViewBtn;
-	@FXML
-	private WebView WebViewContenu;
-	@FXML
-	private TextField WebViewTextField;
+	// @formatter:off
+	@FXML	private Button WebViewBtn;
+	@FXML	private WebView WebViewContenu;
+	@FXML	private TextField WebViewTextField;
+	// @formatter:on
 
 	// ----------------------------------------------------------------------------------------------------
 	//

@@ -13,6 +13,14 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 
+/**
+ * Classe dédiée à l'onglet Tables<br>
+ * <br>
+ * 
+ * @author Faust MARIA DE ARAVALO - Tous droits réservés. Projet protfolio sur
+ *         JavaFX2<br>
+ *         <br>
+ */
 public class OngletTablesController {
 
 	// @formatter:off

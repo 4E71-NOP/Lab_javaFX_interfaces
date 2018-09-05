@@ -29,14 +29,19 @@ import javafx.scene.paint.Color;
 import javafx.stage.FileChooser;
 
 /**
+ * Classe dédiée à l'onglet Image<br>
+ * <br>
  * Controlleur dédié aux images et aux filtrages sur celles-ci. Plusieurs filtre
  * sont utilisés. Même s'il sont cumulés il y peu de chance que cela soit
  * intéressant de trop cumuler les effets. Les rendu reste instantané, mais
- * plutot illisible si on abuse.
+ * plutot illisible si on abuse.* <br>
+ * <br>
  * 
+ * @author Faust MARIA DE ARAVALO - Tous droits réservés. Projet protfolio sur
+ *         JavaFX2<br>
+ *         <br>
  */
 public class OngletImagesController implements Observer {
-	
 	// @formatter:off
 	@FXML	private Button ImagesBtnCharger;
 	@FXML	private Label ImagesLabelOpacite;
@@ -280,8 +285,8 @@ public class OngletImagesController implements Observer {
 					double imageContenuTailleY = ImagesContenuTampon.getHeight();
 					double imageZoomTailleX = Math.floor(imageContenuTailleX * (imageZoom / 100));
 					double imageZoomTailleY = Math.floor(imageContenuTailleY * (imageZoom / 100));
-					double encadrementTailleX = ImagesEncadrement.getWidth();
-					double encadrementTailleY = ImagesEncadrement.getHeight();
+//					double encadrementTailleX = ImagesEncadrement.getWidth();
+//					double encadrementTailleY = ImagesEncadrement.getHeight();
 
 					ImagesEncadrement.setHvalue(0.5);
 					ImagesEncadrement.setVvalue(0.5);

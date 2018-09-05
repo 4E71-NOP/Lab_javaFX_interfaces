@@ -1,9 +1,12 @@
 package com.fma.entite;
-/*
- * @author Faust
- * Objet permettant de faciliter la gestion des fichier.
+
+/**
+ * Classe permettant de faciliter la gestion des fichiers.<br>
+ * <br>
  * 
- * 
+ * @author Faust MARIA DE ARAVALO - Tous droits réservés. Projet protfolio sur
+ *         JavaFX2<br>
+ *         <br>
  */
 public class ItemFichier {
 	// 0 fichier; 1 repertoire; 2 lien

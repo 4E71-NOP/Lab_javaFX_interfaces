@@ -16,30 +16,28 @@ import javafx.scene.input.KeyEvent;
 //import uk.co.caprica.vlcj.discovery.NativeDiscovery;
 
 /**
- * @author faust
  * 
- *         Auteur : Faust MARIA DE ARAVALO - Tous droits réservés. Projet
- *         protfolio sur JavaFX2
+ * L'installation de openjfx sur linux peut être nécessaire pour faire
+ * fonctionner le programme en jar executable.<br>
+ * sur Linux : local $> sudo apt-get install openjfx<br>
+ * <br>
+ * Sur environnement Linux il se peut que le lancement via l'icone soit mal pris
+ * en charge Dans ce cas il faut créer un fichier qui permet de définir un mode
+ * opératoire.<br>
+ * <br>
+ * Dans /usr/share/applications créer "java.desktop"<br>
+ * <br>
+ * [Desktop Entry] Name=Java JRE Comment=Java GenericName=Java Keywords=java
+ * Exec=java -jar %f Terminal=false X-MultipleArgs=false Type=Application
+ * MimeType=application/x-java-archive StartupNotify=true<br>
+ * <br>
+ * Egalement : l'initialisation du controlleur est lancée s'il n'y a pas
+ * d'argument fournis S'ils sont fournis il faut implémenter
+ * "initializable".<br>
  * 
- * 
- *         L'installation de openjfx sur linux peut être nécessaire pour faire
- *         fonctionner le programme en jar executable. sudo apt-get install
- *         openjfx
- * 
- *         Sur environnement Linux il se peut que le lancement via l'icone soit
- *         mal pris en charge Dans ce cas il faut créer un fichier qui permet de
- *         définir un mode opératoire
- * 
- *         Dans /usr/share/applications créer "java.desktop"
- * 
- *         [Desktop Entry] Name=Java JRE Comment=Java GenericName=Java
- *         Keywords=java Exec=java -jar %f Terminal=false X-MultipleArgs=false
- *         Type=Application MimeType=application/x-java-archive
- *         StartupNotify=true
- * 
- *         Egalement : l'initialisation du controlleur est lancée s'il n'y a pas
- *         d'argument fournis S'ils sont fournis il faut implémenter
- *         "initializable"
+ * @author Faust MARIA DE ARAVALO - Tous droits réservés. Projet protfolio sur
+ *         JavaFX2<br>
+ *         <br>
  * 
  */
 public class Main extends Application {

@@ -1,5 +1,13 @@
 package com.fma.entite;
 
+/**
+ * Classe dédiée à ItemDeListe3Colonnes<br>
+ * <br>
+ * 
+ * @author Faust MARIA DE ARAVALO - Tous droits réservés. Projet protfolio sur
+ *         JavaFX2<br>
+ *         <br>
+ */
 public class ItemDeListe3Colonnes {
 
 	private String titre;
@@ -44,7 +52,5 @@ public class ItemDeListe3Colonnes {
 	public String toString() {
 		return titre;
 	}
-	
-	
 
 }

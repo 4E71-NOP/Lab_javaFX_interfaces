@@ -1,7 +1,5 @@
 package com.fma.ihm.formulaires;
 
-import java.util.ArrayList;
-import java.util.Observable;
 import java.util.regex.Pattern;
 
 import javafx.collections.FXCollections;
@@ -20,8 +18,15 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.ChoiceBox;
 
+/**
+ * Classe dédiée à l'onglet Formaulaires<br>
+ * <br>
+ * 
+ * @author Faust MARIA DE ARAVALO - Tous droits réservés. Projet protfolio sur
+ *         JavaFX2<br>
+ *         <br>
+ */
 public class OngletFormulairesController {
-
 	// @formatter:off
 	@FXML	private TextField FormulaireChampTexte;
 	@FXML	private Label FormulaireChampTexteValeur;
@@ -61,7 +66,6 @@ public class OngletFormulairesController {
 	
 	@FXML	private ComboBox<String> FormulaireComboBox;
 	@FXML	private Label FormulaireComboBoxValeur;
-	
 	// @formatter:on
 
 	private String[] strList = { "Vide", "Check", "Intermédiaire" };
@@ -87,7 +91,8 @@ public class OngletFormulairesController {
 		String str = strList[CheckboxState];
 
 		FormulaireCheckbox02Valeur.setText("Etat : " + str);
-		System.out.println(getClass().getName() + " FormulaireCheckbox02 état : " + FormulaireCheckbox02.isSelected() + " /intermédiaire" + FormulaireCheckbox02.isIndeterminate());
+		System.out.println(getClass().getName() + " FormulaireCheckbox02 état : " + FormulaireCheckbox02.isSelected()
+				+ " /intermédiaire" + FormulaireCheckbox02.isIndeterminate());
 		// FormulaireCheckbox02.is
 	}
 

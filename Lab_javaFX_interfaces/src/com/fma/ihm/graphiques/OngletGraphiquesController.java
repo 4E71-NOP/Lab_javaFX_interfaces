@@ -5,11 +5,19 @@ import javafx.scene.chart.LineChart;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 
+/**
+ * Classe dédiée à l'onglet Graphiques<br>
+ * <br>
+ * 
+ * @author Faust MARIA DE ARAVALO - Tous droits réservés. Projet protfolio sur
+ *         JavaFX2<br>
+ *         <br>
+ */
 public class OngletGraphiquesController {
-	@FXML
-	private LineChart<String, Number> GaphiquesLineChart;
-	@FXML
-	private Button GaphiquesBtn;
+	// @formatter:off
+	@FXML	private LineChart<String, Number> GaphiquesLineChart;
+	@FXML	private Button GaphiquesBtn;
+	// @formatter:on
 
 	private XYChart.Series<String, Number> courbe01 = new XYChart.Series<String, Number>();
 	private XYChart.Series<String, Number> courbe02 = new XYChart.Series<String, Number>();
@@ -24,8 +32,8 @@ public class OngletGraphiquesController {
 	public void GaphiquesBtnAction() {
 		GaphiquesLineChart.getData().remove(courbe01);
 		GaphiquesLineChart.getData().remove(courbe02);
-//		courbe01.getData().removeAll();
-//		courbe02.getData().removeAll();
+		// courbe01.getData().removeAll();
+		// courbe02.getData().removeAll();
 		courbe01 = new XYChart.Series<String, Number>();
 		courbe02 = new XYChart.Series<String, Number>();
 		CreationDeSeries();

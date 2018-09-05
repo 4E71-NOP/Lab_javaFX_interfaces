@@ -25,21 +25,21 @@
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </padding>
          <children>
-            <TabPane minWidth="384.0" tabClosingPolicy="UNAVAILABLE">
+            <TabPane fx:id="MenusTabA1" minWidth="384.0" onMouseClicked="#MenusTabA1Action" tabClosingPolicy="UNAVAILABLE">
               <tabs>
-                <Tab text="Untitled Tab 1">
+                <Tab text="MenuTab1">
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                   </content>
                 </Tab>
-                <Tab text="Untitled Tab 2">
+                <Tab text="MenuTab2">
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                   </content>
                 </Tab>
               </tabs>
             </TabPane>
-            <ToolBar fx:id="ContenusToolbar" minWidth="384.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <ToolBar fx:id="MenusToolbar" minWidth="384.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <items>
                   <Button fx:id="MenusToolbarBtn01" mnemonicParsing="false" onAction="#MenusToolbarBtn01Action">
                      <graphic>
@@ -66,22 +66,22 @@
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </padding>
             </ToolBar>
-            <MenuBar minWidth="384.0" GridPane.columnIndex="1">
+            <MenuBar fx:id="MenusMenuBarB1" minWidth="384.0" onMouseClicked="#MenusMenuBarB1Action" GridPane.columnIndex="1">
                <menus>
                   <Menu mnemonicParsing="false" text="File">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="Close" />
-                        <MenuItem mnemonicParsing="false" text="Menu perso" />
+                        <MenuItem fx:id="MenusMenuBarB1FileClose" mnemonicParsing="false" onAction="#MenusMenuBarB1FileCloseAction" text="Close" />
+                        <MenuItem fx:id="MenusMenuBarB1FilePerso" mnemonicParsing="false" onAction="#MenusMenuBarB1FilePersoAction" text="Menu perso" />
                      </items>
                   </Menu>
                   <Menu mnemonicParsing="false" text="Edit">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="Delete" />
+                        <MenuItem fx:id="MenusMenuBarB1EditDelete" mnemonicParsing="false" onAction="#MenusMenuBarB1EditDeleteAction" text="Delete" />
                      </items>
                   </Menu>
                   <Menu mnemonicParsing="false" text="Help">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="About" />
+                        <MenuItem fx:id="MenusMenuBarB1HelpAbout" mnemonicParsing="false" onAction="#MenusMenuBarB1HelpAboutAction" text="About" />
                      </items>
                   </Menu>
                </menus>

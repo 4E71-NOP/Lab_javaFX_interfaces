@@ -21,24 +21,30 @@ import javafx.scene.media.MediaView;
 import javafx.stage.FileChooser;
 import javafx.util.Duration;
 
+/**
+ * Classe dédiée à l'onglet Media<br>
+ * <br>
+ * 
+ * @author Faust MARIA DE ARAVALO - Tous droits réservés. Projet protfolio sur
+ *         JavaFX2<br>
+ *         <br>
+ */
 public class OngletMediaController {
-
 	// @formatter:off
-    @FXML	private Button MediaBoutonSelectionFichier;
-    
-    @FXML	private AnchorPane MediaAnchorPane;
-    @FXML	private MediaView MediaMediaView;
+	@FXML	private Button MediaBoutonSelectionFichier;
 
-    @FXML	private Slider MediaSliderLecture;
-    @FXML	private Button MediaBoutonStop;
-    @FXML	private Button MediaBoutonLecture;
-    @FXML	private Label MediaLabelLecture;
+	@FXML	private AnchorPane MediaAnchorPane;
+	@FXML	private MediaView MediaMediaView;
 
-    @FXML	private Slider MediaSliderSon;
+	@FXML	private Slider MediaSliderLecture;
+	@FXML	private Button MediaBoutonStop;
+	@FXML	private Button MediaBoutonLecture;
+	@FXML	private Label MediaLabelLecture;
+
+	@FXML	private Slider MediaSliderSon;
 	@FXML	private Label MediaLabel;
 
-    @FXML	private Slider MediaSliderRate;
-
+	@FXML	private Slider MediaSliderRate;
 	// @formatter:on
 
 	private Duration mpDuree;

@@ -11,13 +11,19 @@ import javafx.scene.control.ListView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.control.Label;
 
-public class OngletListesController {
-	@FXML
-	private Button ListesBtn;
-	@FXML
-	private ListView<ItemDeListe3Colonnes> ListesListView;
-	@FXML
-	private Label ListesLabel;
+/**
+ * Classe dédiée à l'onglet Listes<br>
+ * <br>
+ * 
+ * @author Faust MARIA DE ARAVALO - Tous droits réservés. Projet
+ *         protfolio sur JavaFX2<br>
+ *         <br>
+ */public class OngletListesController {
+	// @formatter:off
+	@FXML	private Button ListesBtn;
+	@FXML	private ListView<ItemDeListe3Colonnes> ListesListView;
+	@FXML	private Label ListesLabel;
+	// @formatter:on
 
 	// ----------------------------------------------------------------------------------------------------
 	//

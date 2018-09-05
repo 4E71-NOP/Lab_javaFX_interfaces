@@ -8,15 +8,20 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
 
-//public class OngletControlesController implements Initializable {
+/**
+ * Classe dédiée à l'onglet Controles<br>
+ * <br>
+ * 
+ * @author Faust MARIA DE ARAVALO - Tous droits réservés. Projet protfolio sur
+ *         JavaFX2<br>
+ *         <br>
+ */
 public class OngletControlesController {
-
 	// @formatter:off
 	@FXML	private Slider ControlesCurseur01;
 	@FXML	private Label ControlesCurseurValeur01;
 	@FXML	private ProgressBar ControleBarreProgression;
 	@FXML	private Slider ControlesCurseur02;
-
 	// @formatter:on
 
 	// ----------------------------------------------------------------------------------------------------
@@ -33,13 +38,13 @@ public class OngletControlesController {
 		float progressBarValue = (float) (ControlesCurseur02.getValue() / 100);
 		ControleBarreProgression.setProgress(progressBarValue);
 		MajControlesCurseurValeur01(0f, progressBarValue);
-		
-		
+
 		// voir aussi:
 		// https://stackoverflow.com/questions/51343759/how-to-change-fill-color-of-slider-in-javafx
 		StackPane trackPane = (StackPane) ControlesCurseur02.lookup(".track");
-        String style = "-fx-background-color: linear-gradient(to right, #0000ff "+ControlesCurseur02.getValue()+"%, #ff000040 "+ControlesCurseur02.getValue()+"%);";
-        trackPane.setStyle(style);
+		String style = "-fx-background-color: linear-gradient(to right, #0000ff " + ControlesCurseur02.getValue()
+				+ "%, #ff000040 " + ControlesCurseur02.getValue() + "%);";
+		trackPane.setStyle(style);
 	}
 
 	private void MajControlesCurseurValeur01(float ancienneVal, float nouvelleVal) {

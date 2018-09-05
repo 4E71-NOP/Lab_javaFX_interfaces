@@ -23,22 +23,28 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.Stage;
 
+/**
+ * Classe dédiée à l'onglet TreeView<br>
+ * <br>
+ * 
+ * @author Faust MARIA DE ARAVALO - Tous droits réservés. Projet protfolio sur
+ *         JavaFX2<br>
+ *         <br>
+ */
 public class OngletTreeViewsController {
-	@FXML
-	private AnchorPane OngletTreeViewsTabId;
-	@FXML
-	private Button TreeViewsBtn;
-	@FXML
-	private TreeView<ItemFichier> TreeViewsContenu;
-	@FXML
-	private TreeTableView<ItemFichier> TreeViewsTreeTableView;
-	@FXML
-	private Label TreeViewsLabel;
+	// @formatter:off
+	@FXML	private AnchorPane OngletTreeViewsTabId;
+	@FXML	private Button TreeViewsBtn;
+	@FXML	private TreeView<ItemFichier> TreeViewsContenu;
+	@FXML	private TreeTableView<ItemFichier> TreeViewsTreeTableView;
+	@FXML	private Label TreeViewsLabel;
+	// @formatter:on
 
 	// private final Node icone01 = new ImageView(new
 	// Image(getClass().getResourceAsStream("animale-staroffice-summerbird-icone-6155-128.png")));
 	// revoir le chemin pour arriver dans le vrai répertoire des ressources
 
+	@SuppressWarnings("unused")
 	private TreeItem<ItemFichier> selectionElementTreeView;
 	private ItemFichier selectionFichier;
 	private String comportementTreeView = "SurDemande"; // SurDemande ou ChargementComplet
@@ -49,6 +55,7 @@ public class OngletTreeViewsController {
 	//
 	//
 	//
+
 	public void TreeViewsBtnAction() {
 		Stage stage = (Stage) OngletTreeViewsTabId.getScene().getWindow();
 		DirectoryChooser dc = new DirectoryChooser();
@@ -107,13 +114,17 @@ public class OngletTreeViewsController {
 		}
 	}
 
-	// ----------------------------------------------------------------------------------------------------
-	//
-	// Parcours un répertoire et peuple l'objet (ici TreeItem<ItemFichier>) avec les
-	// candidats trouvés (ici des images)
-	// fichiers trouvées. Mode Lecture à la demande
-	// ".*(\\.bmp|\\.gif|\\.jpg|\\.jpeg|\\.png)$"
-	//
+	/**
+	 * Parcours un répertoire et peuple l'objet (ici TreeItem<ItemFichier>) avec les
+	 * candidats trouvés (ici des images) fichiers trouvées.<br>
+	 * <br>
+	 * Mode Lecture à la demande ".*(\\.bmp|\\.gif|\\.jpg|\\.jpeg|\\.png)$"<br>
+	 * 
+	 * @param chemin
+	 * @param nom
+	 * @param typeFichier
+	 * @param objEnCours
+	 */
 	private void ajouteElementsSurDemande(String chemin, String nom, String typeFichier,
 			TreeItem<ItemFichier> objEnCours) {
 
@@ -166,12 +177,20 @@ public class OngletTreeViewsController {
 		});
 	}
 
-	// ----------------------------------------------------------------------------------------------------
-	//
-	// Parcours un répertoire et peuple l'objet (ici TreeItem<ItemFichier>) avec
-	// TOUS les éléments et sous-éléments trouvés.
-	// Mode ChargementComplet
-	//
+	/**
+	 * Parcours un répertoire et peuple l'objet (ici TreeItem<ItemFichier>) avec
+	 * TOUS les éléments et sous-éléments trouvés.<br>
+	 * <br>
+	 * Mode ChargementComplet<br>
+	 * 
+	 * @param chemin
+	 * @param nom
+	 * @param niveauEnCours
+	 * @param niveauMax
+	 * @param arretDepliage
+	 * @param typeFichier
+	 * @param objEnCours
+	 */
 	private void ConstructionArborescence(String chemin, String nom, int niveauEnCours, int niveauMax,
 			int arretDepliage, String typeFichier, TreeItem<ItemFichier> objEnCours) {
 

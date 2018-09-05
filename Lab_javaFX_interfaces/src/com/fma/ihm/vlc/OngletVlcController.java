@@ -14,6 +14,14 @@ import javafx.stage.FileChooser;
 //import uk.co.caprica.vlcj.player.direct.DirectMediaPlayer;
 //import uk.co.caprica.vlcj.player.direct.RenderCallback;
 
+/**
+ * Classe dédiée à l'onglet Vlc<br>
+ * <br>
+ * 
+ * @author Faust MARIA DE ARAVALO - Tous droits réservés. Projet protfolio sur
+ *         JavaFX2<br>
+ *         <br>
+ */
 public class OngletVlcController {
 	// @formatter:off
 	@FXML	private AnchorPane vlcAnchorPane;
@@ -25,6 +33,7 @@ public class OngletVlcController {
 	// private EmbeddedMediaPlayerComponent mpc = new
 	// EmbeddedMediaPlayerComponent();
 
+	@SuppressWarnings("unused")
 	private OngletVlcController instance = null;
 
 	// ----------------------------------------------------------------------------------------------------

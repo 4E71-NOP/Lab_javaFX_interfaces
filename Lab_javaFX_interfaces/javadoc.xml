@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="public" additionalparam=" -encoding utf8 &#10;-charset utf8&#10;" author="true" classpath="/home/faust/Bureau/DEV/eclipse-JavaEE/plugins/org.eclipse.fx.ide.css.jfx8_3.0.0.201705220750.jar" destdir="doc" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="com.fma.ihm.barredestatut,com.fma.ihm.editeurhtml,com.fma.ihm.listes,com.fma.ihm.formulaires,com.fma.ihm.images,com.fma.ihm.treeviews,com.fma.entite,com.fma.ihm.graphiques,com.fma.ihm.webviews,com.fma.ihm.controles,com.fma.ihm.media,com.fma.ihm.contenus,com.fma.test,com.fma.ihm.tables,com.fma.ihm.menus,com.fma.ihm.principal,com.fma.ihm.vlc,com.fma,com.fma.agents,com.fma.ihm.boutons" source="1.8" sourcepath="src" splitindex="true" use="true" version="true"/>
+    </target>
+</project>
